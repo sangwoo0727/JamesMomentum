@@ -1,0 +1,17 @@
+.css-greeting .name__input {
+    appearance: none;
+    background: none;
+    border: none; /* 테두리 */
+    color: black; /* 내가 안에 적는 글자색 */
+    font-size: 36px;
+    border-bottom: 3px solid #000000;
+}
+.css-greeting .name__input::placeholder{
+    text-align: center;
+    color: black;
+    opacity: 0.7; /*투명도 지정 */
+}
+
+.css-greeting .name__text{
+    font-size: 36px;
+}

@@ -1,0 +1,36 @@
+body,
+html{
+    overflow: hidden; /*내용이 요소의 크기를 벗어났을 때 어떻게 할건지에 대한 속성 */
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-size : cover;
+    /* background-size는 배경 이미지의 가로 크기와 세로 크기 정할 수 있다. 
+       이 중 값으로 auto는 이미지 크기 유지 , cover는 배경을 사용하는 요소를 다 채울 수 있게 이미지 확대 또는 축소
+       가로 세로 비율은 유지함 
+       */
+    background-position: center center;
+    /* background-position은 배경 이미지의 위치를 정하는 속성
+       기본값은 0% 0%  가로위치와 세로 위치를 정할 수 있다. */
+    
+    /* background-color: #34495e; 이건 body의 배경 색 설정하는 키워드 */
+    /* color: red; 이런 color 키워드는 글자색이다! 혼동하지 마! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    background: none;
+    appearance: none;
+    border: 0;
+    font-size : 22px;
+    border-bottom: 2px solid;
+}
+
+input:focus{
+    outline:none;
+}
