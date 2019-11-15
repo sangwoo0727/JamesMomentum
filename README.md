@@ -6,10 +6,10 @@
 
 - [x] Clock
 - [x] Greeting
-- [] Weather
-- [] location
-- [] Background
-- [] To Do List
+- [ ] Weather
+- [ ] location
+- [ ] Background
+- [ ] To Do List
 
 ## Try it out in here
 [https://sangwoo0727.github.io/JamesMomentum/](https://sangwoo0727.github.io/JamesMomentum/)
