@@ -15,3 +15,14 @@
 .css-greeting .name__text{
     font-size: 36px;
 }
+
+.css__btn{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    vertical-align: middle;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,5 +1,12 @@
 const nameContainer = document.querySelector(".js-greeting");
 
+
+function delFunc(event){
+    localStorage.removeItem("username");
+    setTimeout(function(){
+        location.reload();
+    },100);
+}
 function nameShow(name){
     //로컬스토리지에 저장된 값을 꺼내와서 보여주는 함수!
     nameContainer.innerHTML ="";
@@ -7,9 +14,14 @@ function nameShow(name){
     //span 태그는 inline text container 즉, 문장 단위로 텍스트 영역을 지정하는 것
     // 그 자체로는 아무 역할도 하지 않고, css 스타일을 지정할 때 사용한다.
     // div 태그와 역할이 비슷하지만, div는 사각형 박스 모양으로 구역을 지정하고, span은 한 문장 단위
+    const delBtn = document.createElement("span");
+    delBtn.className ="css__btn"
+    delBtn.innerHTML ="❌";
     title.className = "name__text";
     title.innerHTML = `Hello ${name}`;
     nameContainer.appendChild(title); //동적으로 추가해주는 명령어
+    nameContainer.appendChild(delBtn);
+    delBtn.addEventListener("click",delFunc);
 }
 
 function handleSubmit(event){
