@@ -6,8 +6,8 @@
 
 - [x] Clock
 - [x] Greeting
-- [ ] Weather
-- [ ] location
+- [x] Weather
+- [x] location
 - [ ] Background
 - [ ] To Do List
 
