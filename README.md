@@ -11,6 +11,6 @@
 - [ ] Background
 - [ ] To Do List
 
-## 아래 링크를 통해 사용해보세요
+## 사용해보세요!
 
 [https://sangwoo0727.github.io/JamesMomentum/](https://sangwoo0727.github.io/JamesMomentum/)
