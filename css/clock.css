@@ -1,4 +1,4 @@
 .clock-text{
-    font-size: 4em;
+    font-size: 5em;
     /* css 작성은 em 사용을 권장한다. em은 웹 문서에서 사용되는 단위로 컴퓨터 외 모바일 등 다른 장치에서도 크기 조정 가능*/
 }

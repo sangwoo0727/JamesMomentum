@@ -1,4 +1,5 @@
 .css-weather{
     margin-top: 20%;
     font-size: 30px;
+    transition: 300ms ease-in-out;
 }

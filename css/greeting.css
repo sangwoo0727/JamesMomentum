@@ -13,16 +13,24 @@
 }
 
 .css-greeting .name__text{
-    font-size: 36px;
+    font-size: 45px;
 }
 
 .css__btn{
-    font-size: 25px;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    width: auto;
+    height: 40px; 
+    line-height: 40px; /* 가운데 수직 정렬하기 위해 위에 height와 동일한 값 적용 */
     vertical-align: middle;
-    background: none;
+    text-align: center;
+    background: #d8d5d5;
     outline: none;
     border: none;
     cursor: pointer;
+    transform: scale(1,1); /*transfrom과 transition 잘사용하기 */ 
+    transition: transform 300ms ease-in-out;
+}
+.css__btn:hover{
+    transform: scale(1.1,1.1);
 }
