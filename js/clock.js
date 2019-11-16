@@ -1,4 +1,4 @@
-const dayArr=["MON","TUE","WED","THR","FRI","SAT","SUN"];
+const dayArr=["SUN","MON","TUE","WED","THR","FRI","SAT"];
 //아래 두문장은 css선택자를 이용하여 DOM을 조작하는 것
 const clockContainer = document.querySelector(".js-clock");
 const clockTitle = clockContainer.querySelector(".clock-text");
@@ -8,7 +8,7 @@ const clockTitle = clockContainer.querySelector(".clock-text");
 function getTime(){
     const date = new Date();
     //console.log(date);
-    const day = dayArr[date.getDay()-1];
+    const day = dayArr[date.getDay()];
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
