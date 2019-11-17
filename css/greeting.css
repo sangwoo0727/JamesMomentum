@@ -1,3 +1,6 @@
+.css-greeting{
+    text-align: center;
+}
 .css-greeting .name__input {
     appearance: none;
     background: none;
@@ -13,18 +16,18 @@
 }
 
 .css-greeting .name__text{
+    text-align: center;
     font-size: 45px;
 }
 
 .css__btn{
-    margin-top: 10px;
-    font-size: 20px;
-    width: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 250px;
     height: 40px; 
     line-height: 40px; /* 가운데 수직 정렬하기 위해 위에 height와 동일한 값 적용 */
-    vertical-align: middle;
-    text-align: center;
     background: #d8d5d5;
+    text-align: center;
     outline: none;
     border: none;
     cursor: pointer;

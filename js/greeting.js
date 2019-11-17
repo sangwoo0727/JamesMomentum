@@ -1,4 +1,5 @@
 const nameContainer = document.querySelector(".js-greeting");
+const delContainer = document.querySelector(".js-delBtn");
 
 
 function delFunc(event){
@@ -7,9 +8,14 @@ function delFunc(event){
         location.reload();
     },100);
 }
+
+function restart(){
+    
+}
 function nameShow(name){
     //로컬스토리지에 저장된 값을 꺼내와서 보여주는 함수!
     nameContainer.innerHTML ="";
+    delContainer.innerHTML ="";
     const title = document.createElement("div")
     //span 태그는 inline text container 즉, 문장 단위로 텍스트 영역을 지정하는 것
     // 그 자체로는 아무 역할도 하지 않고, css 스타일을 지정할 때 사용한다.
@@ -20,7 +26,7 @@ function nameShow(name){
     title.className = "name__text";
     title.innerHTML = `Hello , ${name} !`;
     nameContainer.appendChild(title); //동적으로 추가해주는 명령어
-    nameContainer.appendChild(delBtn);
+    delContainer.appendChild(delBtn);
     delBtn.addEventListener("click",delFunc);
 }
 
