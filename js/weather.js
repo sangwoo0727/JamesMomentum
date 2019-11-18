@@ -38,20 +38,13 @@ function handleGeoFailure(){
     console.log("Error");
 }
 function loadWeather(){
-    const currentCoords = localStorage.getItem("coords"); //좌표 정보를 먼저 받아와야한다.
-    // 좌표가 이동되더라도 계속해서 갱신되게
-    if(currentCoords !== null){
-        const parsedCoords = JSON.parse(currentCoords);
-        getWeather(parsedCoords);
-    }else{
-        navigator.geolocation.getCurrentPosition(
-            //navigator 객체는 window 객체의 프로퍼티로 브라우저의 정보를 제공하는 객체
-            //navigator.geolocation API는 직접 웹에서도 위치정보를 수집할 수 있다.
-            //이 API는 단말의 위도와 경도를 수집할 수 있는 인터페이스를 제공해준다.
-            handleGeoSuccess,  //성공했을때
-            handleGeoFailure //실패했을때
-        );
-    }
+    navigator.geolocation.getCurrentPosition(
+        //navigator 객체는 window 객체의 프로퍼티로 브라우저의 정보를 제공하는 객체
+        //navigator.geolocation API는 직접 웹에서도 위치정보를 수집할 수 있다.
+        //이 API는 단말의 위도와 경도를 수집할 수 있는 인터페이스를 제공해준다.
+        handleGeoSuccess,  //성공했을때
+        handleGeoFailure //실패했을때
+    );
 }
 
 function startWeather(){
