@@ -1,6 +1,6 @@
 const nameContainer = document.querySelector(".js-greeting");
 const delContainer = document.querySelector(".js-delBtn");
-
+//querySelector와 findviewbyId에 대한 차이점을 확실히 공부해야겠다.
 
 function delFunc(event){
     localStorage.removeItem("username");
@@ -9,9 +9,7 @@ function delFunc(event){
     },100);
 }
 
-function restart(){
-    
-}
+
 function nameShow(name){
     //로컬스토리지에 저장된 값을 꺼내와서 보여주는 함수!
     nameContainer.innerHTML ="";
